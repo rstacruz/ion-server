@@ -16,6 +16,15 @@ Ensure Redis is running, then:
 
 Then visit http://127.0.0.1:8080/ for reference.
 
+### In your application
+
+Instead of using `Ion.connect`, use:
+
+    Ion.remote = "http://127.0.0.1:8080"
+
+Things will then be performed on that given Ion server, instead of
+inline in your application.
+
 Testing
 -------
 
