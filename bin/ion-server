@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+require 'unicorn'
+
+path = File.expand_path('../../www', __FILE__)
+Dir.chdir path
+
+app = Unicorn.builder('config.ru', {})
+Unicorn.run app, {}
+
+#system "unicorn #{ARGV.join(' ')} -c #{config}"

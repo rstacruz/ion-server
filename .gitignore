@@ -1,0 +1,5 @@
+*~
+.rvmrc
+pkg/
+db/
+vendor/
